@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed de Receitas</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="image-container">
+         <img src="imagens/Deco Backgroundpote.png" >
+    </div>
+
+    <button id="toggle-form">+</button>
+
+    <div id="form-container">
+        <form id="recipe-form">
+            <label for="recipe-title">Título:</label>
+            <input type="text" id="recipe-title" required><br><br>
+            <label for="recipe-content">Receita:</label><br>
+            <textarea id="recipe-content" rows="4" required></textarea><br><br>
+            <label for="animal-content">Descrição do Animal:</label><br>
+            <textarea id="animal-content" rows="4" required></textarea><br><br>
+            <button id="b-criar" type="submit">Adicionar Receita</button>
+        </form>
+    </div>
+
+    <div id="feed-container">
+        <h2>Feed de Receitas</h2>
+        <div id="feed"></div>
+    </div>
+
+    <div id="task_open">
+        <div class="content_task">
+            <p id="title_task"></p>
+            <div class="botoes">
+                <button type="button" id="b_sair">Sair</button>
+                <button type="button" id="b_excluir">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

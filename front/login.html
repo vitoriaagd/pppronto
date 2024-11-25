@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define a codificação de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Define a compatibilidade do viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Document</title>
+
+    <!-- Pré-conexões para otimizar o carregamento das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link para a fonte "Catamaran" do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilo CSS externo -->
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body> 
+    <main>
+        <!-- Seção à esquerda, normalmente usada para exibir uma imagem -->
+        <section class="esquerda">
+            <!-- Imagem de um cachorro, provavelmente parte do tema visual -->
+            <img src="imagens/cao.png" height="550vh" alt="Cachorro">
+        </section>
+
+        <!-- Seção à direita, onde fica o formulário de cadastro -->
+        <section class="direita">
+            <div class="forms">
+                <!-- Área do logo -->
+                <div class="logo">
+                    <img src="imagens/logo1.png" alt="Logo" width="35%">
+                </div>
+                
+                <!-- Área de criação de conta -->
+                <div class="login">
+                    <h2>Crie sua Conta</h2> <!-- Título do formulário -->
+                    <h3>Bem vindo! Por favor preencha suas informações abaixo e comece já</h3> <!-- Subtítulo do formulário -->
+                    
+                    <!-- Campo para o nome completo -->
+                    <input id="nome" class="campo" type="text" name="nome" placeholder="Nome Completo">
+                    <!-- Campo para o email -->
+                    <input id="email" class="campo" type="email" name="email" placeholder="Email">
+                    <!-- Campo para a senha -->
+                    <input id="senha" class="campo" type="password" name="senha" placeholder="Senha">
+                    
+                    <!-- Botão para criar a conta -->
+                    <button type="button" href="home.html" id="criarconta" class="botao">criar conta</button>
+                </div>  
+                
+                <!-- Seção para redirecionar caso o usuário já tenha uma conta -->
+                <div class="login1">
+                    <p> Já possui conta? </p>
+                    <!-- Link para a página de login -->
+                    <a href="signup.html">Faça login</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="cadastro.js"></script>
+</body>
+</html>

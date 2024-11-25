@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define a codificação de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Configura o viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Document</title>
+
+    <!-- Pré-conexões para otimizar o carregamento das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link para a fonte "Catamaran" do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Link para o arquivo de estilo CSS externo -->
+    <link rel="stylesheet" href="signup.css" />
+    <!-- Link para o arquivo JavaScript externo, carregado de forma assíncrona com defer -->
+    <script src="signup.js" defer></script>
+</head>
+<body> 
+    <main>
+        <!-- Seção à esquerda, geralmente usada para exibir uma imagem de destaque -->
+        <section class="esquerda">
+            <!-- Imagem de um cachorro, parte do design visual da página -->
+            <img src="imagens/cao.png" height="550vh" alt="Cachorro">
+        </section>
+
+        <!-- Seção à direita, onde fica o formulário de login -->
+        <section class="direita">
+            <div class="forms">
+                <!-- Área do logo -->
+                <div class="logo">
+                    <img src="imagens/logo1.png" alt="Logo" width="35%">
+                </div>
+                
+                <!-- Área de login -->
+                <div class="login">
+                    <h2>Já tem uma conta?</h2> <!-- Título do formulário -->
+                    <h3>Insira suas informações e prossiga</h3> <!-- Subtítulo do formulário -->
+                    
+                    <!-- Campo para o email -->
+                    <input id="email" class="campo" type="email" name="email" placeholder="Email">
+                    <!-- Campo para a senha -->
+                    <input id="senha" class="campo" type="password" name="senha" placeholder="Senha">
+                    
+                    <!-- Botão para submeter o login -->
+                    <button type="button" id="criarconta" class="botao">Entrar</button>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <!-- Comentado: um script JavaScript anteriormente vinculado -->
+    <!-- <script src="cadastro.js"></script> -->
+
+</body>
+</html>

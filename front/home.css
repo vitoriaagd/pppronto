@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2A3240; /* Cor de fundo da página */
+}
+
+#image-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 150px; /* Defina a largura desejada */
+    height: 150px; /* Defina a altura desejada */
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.3); */
+    z-index: 1000;
+    overflow: hidden;
+    /* Fundo transparente */
+    background-color: transparent;
+}
+
+#task_open {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    background-color: white;
+    width: 30vw;
+    height: 20vh;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content_task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    height: 18vh;
+}
+.botoes > button{
+    background-color: #576275;
+    border: none;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.botoes {
+    display: flex;
+    gap: 3vw;
+}
+
+#b_excluir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feed-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#form-container {
+    position: fixed;
+    bottom: 60px; /* Ajustado para não sobrepor o botão */
+    right: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000; /* Garante que o formulário fique sobre outros elementos */
+}
+
+#feed {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(3, 1fr); /* 5 colunas com tamanhos iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center; /* Centraliza o grid na horizontal */
+    margin: 20px; /* Adiciona margem ao redor do grid */
+    width: 90%; /* Define a largura do feed para caber na tela */
+}
+
+
+.feed-item {
+    background: #576275; /* Fundo escuro para contraste */
+    color: #fff; /* Texto branco */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+    word-wrap: break-word; /* Quebra palavras longas */
+    overflow-wrap: break-word; /* Quebra palavras longas */
+}
+
+#toggle-form {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+}
+
+h2 {
+    color: white; /* Cor do título */
+}
+
+#recipe-form button[type="submit"] {
+    background: #007BFF; /* Cor azul para o botão */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#recipe-form button[type="submit"]:hover {
+    background: #0056b3; /* Cor azul escuro ao passar o mouse */
+}
